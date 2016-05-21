@@ -1,8 +1,12 @@
+'use strict';
+
 const execFile = require('child_process').execFile;
 const http = require('http');
 const parallel = require('async/parallel');
 
-const PORT = 3000;
+const config = require('./config');
+
+const PORT = config.port || 3000;
 
 const server = http.createServer((request, response) => {
   parallel({
@@ -23,8 +27,8 @@ const server = http.createServer((request, response) => {
     const pm2 = results.pm2.replace('\n Use `pm2 show <id|name>` to get more details about an app\n', '');
 
     const body = JSON.stringify({
-      df: results.df,
-      pm2,
+      filesystem: results.df,
+      app: pm2,
     });
 
     response.writeHead(200, { 'Content-Type': 'application/json' });
