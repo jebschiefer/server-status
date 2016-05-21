@@ -1,9 +1,16 @@
 {
   "extends": "airbnb-base",
+  "env": {
+    "node": true,
+  },
+  "parserOptions": {
+    "sourceType": "script",
+  },
   "rules": {
     "max-len": 0,
     "no-console": 0,
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "no-use-before-define": ["error", { "functions": false }],
+    "strict": ["error", "global"]
   }
 }
