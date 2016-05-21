@@ -2,13 +2,14 @@
   "name": "server-status",
   "version": "1.0.0",
   "description": "Reports status of a server",
-  "license": "MIT",
-  "repository": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "Jeb Schiefer",
+  "license": "MIT",
+  "repository": "https://github.com/jebschiefer/server-status",
   "devDependencies": {
     "eslint": "2.10.2",
     "eslint-config-airbnb-base": "3.0.1",
