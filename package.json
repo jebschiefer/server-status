@@ -1,0 +1,20 @@
+{
+  "name": "server-status",
+  "version": "1.0.0",
+  "description": "Reports status of a server",
+  "license": "MIT",
+  "repository": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "2.10.2",
+    "eslint-config-airbnb-base": "3.0.1",
+    "eslint-plugin-import": "1.8.0"
+  },
+  "dependencies": {
+    "async": "2.0.0-rc.5"
+  }
+}
